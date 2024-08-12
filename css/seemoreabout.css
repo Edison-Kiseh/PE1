@@ -1,0 +1,25 @@
+.content
+{
+    width: 75%;
+    margin: 0px 0px 230px 165px;
+}
+
+.content p
+{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+h2
+{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 550;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 40px 0px;
+}
+

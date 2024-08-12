@@ -1,0 +1,39 @@
+
+#dot1{
+    float: left;
+}
+
+.dotimage{
+    width: 14px;
+    height: 14px;
+    margin-top: 58px;
+}
+
+.wrapper{
+    width: 530px;
+    height: 200px;
+    background-color: #e0dada;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 500px;
+    position: absolute;
+    z-index: 999;
+    color: black;
+}
+
+h1{
+    font-size: 70px;
+    
+}
+
+.order{
+    font-size: 22px;
+    text-align: center;
+}
+
+.pro{
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 50px;
+}

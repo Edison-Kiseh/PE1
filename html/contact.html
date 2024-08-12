@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.color.plus-names.js"></script>
+    <script>
+        function verify()
+        {
+            var email = document.getElementById('subscribe').value;
+
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//copied this line and the following one from the internet in order to validate my email
+            var test = regex.test(email);
+  
+            if(test)
+            {
+                alert('You are now subscribed to our news letter!\nCheck your emails regularly for our exclusive deals!');
+            }
+
+            if(!test)
+            {
+                document.getElementById('subscribe').value = "Please enter a valid email"
+            }
+
+        }
+
+        function check()//To make sure that the form has been filled
+        {
+            var firstname = document.getElementById('fname').value;
+            var lastname = document.getElementById('lname').value;
+            var email = document.getElementById('email').value;
+            var remark = document.getElementById('textarea').value;
+
+            if(firstname == "" || lastname == "" || email == "" || remark == "")
+            {
+                if(firstname == "")
+                {
+                    document.getElementById("warning").innerHTML = "The above field is required!"
+                }
+                else
+                {
+                    document.getElementById("warning").innerHTML = ""
+                }
+
+                if( lastname == "")
+                {
+                    document.getElementById("warning1").innerHTML = "The above field is required!"
+                }
+                else
+                {
+                    document.getElementById("warning1").innerHTML = ""
+                }
+                 
+                if(email == "")
+                {
+                    document.getElementById("warning2").innerHTML = "The above field is required!"
+                }
+                else
+                {
+                    document.getElementById("warning2").innerHTML = ""
+                }
+
+                if(remark == "")
+                {
+                    document.getElementById("warning3").innerHTML = "The above field is required!"
+                }
+                else
+                {
+                    document.getElementById("warning3").innerHTML = ""
+                }
+
+            return false;
+            }
+
+            return true;
+        }
+
+        $(document).ready(function(){
+            $(".content").hide();
+            $(".content").fadeIn(1500);
+            $("form").hide();
+            $("form").slideDown(1200);
+            $(".info").hide();
+            $(".info").slideDown(1200);
+        });
+
+    </script>
+</head>
+<body>
+    <div class="background">
+        <div class="navbar">
+            <a href="index.php"><img src="../images/logo2.png" class="logo"></a>
+            <ul>
+                <li><a href="../html/shop.html">SHOP</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul class="dropdown">
+                        <a href="../html/aboutprojectspace.html"><li>PROJECT SPACE</li></a>
+                        <a href="../html/aboutus.html"><li>THE TEAM</li></a>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <h2>Contact us</h2>
+        <div class="content">
+            <div class="info">
+                <img src="../images/TM logo.png" alt="thomasmore logo" class="TMlogo"/>
+                <p class="location">Sint Katelijn Waver</p>
+                <img src="../images/PinImage.jpg" class="pin" alt="pin" />
+                <p>Jan Pieter de Nayerlaan 5, 2860</p>
+                <p>Electronics-ICT, 1st year</p>
+                <p>Edison: r0937121@student.thomasmore.be</p>
+                <p>Abdellah: r0909304@student.thomasmore.be</p>   
+            </div>
+            <form action="mailto:r0937121@student.thomasmore.be, r0909304@student.thomasmore.be" method="post" enctype="text/plain" onsubmit="return check()">
+            <fieldset>
+                <p class="top">Fields with <em>*</em> are mandatory</p>
+                <p>
+                    <label for="fname" >First name:</label>
+                    <span>&#42;</span>
+                    <input type="text" id="fname" name="First name" class="firstname"/>
+                    <p class="warnings" id="warning"></p>
+                </p>
+                <p>
+                    <label for="lname">Last name:</label>
+                    <span>&#42;</span>
+                    <input type="text" id="lname" name="Last name" />
+                    <p class="warnings" id="warning1"></p>
+                </p>
+                <hr>
+                <p>
+                    <label for="email">Email:</label>
+                    <span>&#42;</span>
+                    <input type="email" id="email" name="Email"/>
+                    <p class="warnings" id="warning2"></p>
+                </p>
+                <hr>
+                <p>
+                    <label for="tel">Tel:</label>
+                    <input type="text" id="tel" name="Telephone"/>
+                </p>
+                <hr>
+                <p>
+                <label >Province:</label>
+                <select name="Province" class="province">
+                   <option value="FL">Flanders</option>
+                   <option value="WA">Wallonia</option>
+                   <option value="Bx">Brussels</option>
+                </select>
+                </p>
+                <hr>
+                <div class="remark">
+                Remarks:
+                <span>&#42;</span>
+                <textarea id="textarea"></textarea>
+                </div>
+                <p class="warnings" id="warning3"></p>
+                
+            </fieldset>
+                <p>
+                   <input type="submit" name="send" class="button"/>
+                   <input type="reset" name="reset" class="button"/>
+                </p>
+               
+        </div>
+    </form> 
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>QUICK LINKS</h2>
+                        <a href="../html/aboutprojectspace.html"><p>About</p></a>
+                        <a href="../html/seemoreabout.html"><p>About us</p></a>
+                        <a href="../html/contact.html"><p>Contact us</p></a>
+                        <a href="../html/termsofservice.html"><p>Terms of service</p></a>
+                        <a href="../html/privacypolicy.html"><p>Privacy policy</p></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>CONTACT US</h2>
+                        <a href="mailto:r0937121@student.thomasmore.be"><p>r0937121@student.thomasmore.be</p></a>
+                        <p>or</p>
+                        <a href="mailto:r0909304@student.thomasmore.be"><p>r0909304@student.thomasmore.be</p></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>NEWSLETTER</h2>
+                        <p>Exclusive offers, promotions, deals and discounts from our store</p>
+                        <p><input type="text" id="subscribe" name="subscribe" value="Enter your email" class="text" /></p>
+                        <p><input type="submit" value="Submit" class="submit" onclick="verify()"/></p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <h2>FOLLOW US:</h2>
+                    <div class="logos">
+                        <a href="https://www.facebook.com/edison.kiseh" target="_blank"><img src="../images/facebook_logo.png" alt="facebook"/></a>
+                        <a href="https://www.instagram.com/the_awesome_lord/" target="_blank"><img src="../images/instagram_logo.png" alt="instagram"/></a>
+                        <a href="https://twitter.com/theawesomelord4/" target="_blank"><img src="../images/twitter_logo.png" alt="twitter"/></a>
+                        <a href="https://www.youtube.com/@projectengineering" target="_blank"><img src="../images/youtube_logo.png" alt="youtube"/></a>
+                        <a href="https://discord.gg/sjv6z833ev" target="_blank"><img src="../images/discord_logo.png" alt="discord" /></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">Copyright &copy; Thomas More Mechelen-Antwerp vzw - Campus De Nayer - Professional bachelor electronics-ict - 2023</div>
+            </div>
+        </footer>
+    
+    </div>
+</body>
+</html>

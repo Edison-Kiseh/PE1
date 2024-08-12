@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet"/>
+        <link href="../css/shop.css" rel="stylesheet" />
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.color.plus-names.js"></script>
+        <title>SHOP</title>
+
+        <script>
+        function verify()
+        {
+            var email = document.getElementById('subscribe').value;
+
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//copied this line and the following one from the internet in order to validate my email
+            var test = regex.test(email);
+  
+            if(test)
+            {
+                alert('You are now subscribed to our news letter!\nCheck your emails regularly for our exclusive deals!');
+            }
+
+            if(!test)
+            {
+                document.getElementById('subscribe').value = "Please enter a valid email"
+            }
+
+        }
+
+            
+            $(document).ready(function(){
+
+                $(".col-sm-3").hide();
+
+                $("#one").fadeIn(1500);
+                $("#two").fadeIn(1700);
+                $("#three").fadeIn(1900);
+                $("#four").fadeIn(2100);
+                $("#five").fadeIn(2300);
+                $("#six").fadeIn(2500);
+                $("#seven").fadeIn(2700);
+                $("#eight").fadeIn(2900);
+                $("#nine").fadeIn(3100);
+                $("#ten").fadeIn(3300);
+                $("#eleven").fadeIn(3500);
+                $("#twelve").fadeIn(3700);
+
+                /*$("#imgone").mouseover(function(){
+                $(this).fadeOut(200)
+                    $(this).attr("src", "../images/Edison.jpg");
+                    $(this).attr("height", "420px");
+                    $(this).fadeIn(300);
+                });
+
+                $("#imgone").mouseout(function(){
+                    $(this).fadeOut(200)
+                    $(this).attr("src", "../images/pic1.jpg");
+                    $(this).fadeIn(300);
+                });
+
+                $("#imgtwo").mouseover(function(){
+                $(this).fadeOut(200)
+                    $(this).attr("src", "../images/Edison.jpg");
+                    $(this).attr("height", "420px");
+                    $(this).fadeIn(300);
+                });
+
+                $("#imgtwo").mouseout(function(){
+                    $(this).fadeOut(200)
+                    $(this).attr("src", "../images/pic2.jpg");
+                    $(this).fadeIn(300);
+                });
+
+                $("#imgthree").mouseover(function(){
+                $(this).fadeOut(200)
+                    $(this).attr("src", "../images/robotarm2.jpg");
+                    $(this).attr("height", "420px");
+                    $(this).fadeIn(300);
+                });
+
+                $("#imgthree").mouseout(function(){
+                    $(this).fadeOut(200)
+                    $(this).attr("src", "../images/pic3.jpg");
+                    $(this).fadeIn(300);
+                });*/
+            });
+        </script>
+    </head>
+<body>
+    <div class="background">
+        <div class="navbar">
+                <a href="./index.php"><img src="../images/logo2.png" class="logo"></a>
+            <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul class="dropdown">
+                        <a href="../html/aboutprojectspace.html"><li>PROJECT SPACE</li></a>
+                        <a href="../html/aboutus.html"><li>THE TEAM</li></a>
+                    </ul>
+                </li>
+                <li><a href="../html/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        
+        <div class="shop_header">
+            <h1 style="font-size: 50px;">Projects</h1>
+            <a href="../html/shopping_cart.php"><img src="../images/cart.png" alt="shopping cart" /></a>
+        </div>
+
+        <div class="container-trui">
+            <div class="row">
+                <div class="col-sm-3" id="one">
+                    <a href="../html/projectInfo/infoproject.php?item=1" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic1.jpg" alt="Card image" style="width:100%" id="imgone"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Sound Sensor</h4> 
+                            <p class="price">&euro;6.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="two">
+                    <a href="../html/projectInfo/infoproject1.php?item=2" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic2.jpg"s alt="Card image" style="width:100%;" height="450px" id="imgtwo"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Analog dial</h4> 
+                            <p class="price">&euro;5.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="three">
+                    <a href="../html/projectInfo/infoproject2.php?item=3" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic3.jpg" alt="Card image" style="width:100%; height: 420px;" id="imgthree"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Robot arm</h4> 
+                            <p class="price">&euro;13.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="four">
+                    <a href="../html/projectInfo/infoproject3.php?item=4" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic4.jpg" alt="Card image" style="width:100%"  id="imgfour"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Light dimmer</h4> 
+                            <p class="price">&euro;4.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="five">
+                    <a href="../html/projectInfo/infoproject4.php?item=5" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic5.jpg" alt="Card image" style="width:100%"  id="imgfive"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Bar graph</h4> 
+                            <p class="price">&euro;8.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="six">
+                    <a href="../html/projectInfo/infoproject5.php?item=6" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic6.jpg" alt="Card image" style="width:100%" height="450px"  id="imgsix"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Running lights</h4> 
+                            <p class="price">&euro;6.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="seven">
+                    <a href="../html/projectInfo/infoproject6.php?item=7" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic7.jpg" alt="Card image" style="width:100%" height="450px"  id="imgseven"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Audio visualizer</h4> 
+                            <p class="price">&euro;9.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" id="eight">
+                    <a href="../html/projectInfo/infoproject7.php?item=8" class="link-item">
+                        <div class="card" style="width:375px">
+                            <div class="image">
+                                <img class="content" src="../images/pic8.jpg" alt="Card image" style="width:100%" height="450px" id="imgeight"/>
+                            </div>
+                            <div class="card-body">
+                            <h4 class="card-title">Arduino Radar</h4> 
+                            <p class="price">&euro;17.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+        <img src="../images/ProjectSpaceIsAwesome.jpg" alt="Project_space_is_awesome" style="width: 300px; margin: 20px auto 30px 600px; border: 10px ridge gray;"/>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>QUICK LINKS</h2>
+                        <a href="../html/aboutprojectspace.html"><p>About</p></a>
+                        <a href="../html/seemoreabout.html"><p>About us</p></a>
+                        <a href="../html/contact.html"><p>Contact us</p></a>
+                        <a href="../html/termsofservice.html"><p>Terms of service</p></a>
+                        <a href="../html/privacypolicy.html"><p>Privacy policy</p></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>CONTACT US</h2>
+                        <a href="mailto:r0937121@student.thomasmore.be"><p>r0937121@student.thomasmore.be</p></a>
+                        <p>or</p>
+                        <a href="mailto:r0909304@student.thomasmore.be"><p>r0909304@student.thomasmore.be</p></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>NEWSLETTER</h2>
+                        <p>Exclusive offers, promotions, deals and discounts from our store</p>
+                        <p><input type="text" id="subscribe" name="subscribe" value="Enter your email" class="text" /></p>
+                        <p><input type="submit" value="Submit" class="submit" onclick="verify()"/></p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <h2>FOLLOW US:</h2>
+                    <div class="logos">
+                        <a href="https://www.facebook.com/edison.kiseh" target="_blank"><img src="../images/facebook_logo.png" alt="facebook"/></a>
+                        <a href="https://www.instagram.com/the_awesome_lord/" target="_blank"><img src="../images/instagram_logo.png" alt="instagram"/></a>
+                        <a href="https://twitter.com/theawesomelord4/" target="_blank"><img src="../images/twitter_logo.png" alt="twitter"/></a>
+                        <a href="https://www.youtube.com/@projectengineering" target="_blank"><img src="../images/youtube_logo.png" alt="youtube"/></a>
+                        <a href="https://discord.gg/sjv6z833ev" target="_blank"><img src="../images/discord_logo.png" alt="discord" /></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">Copyright &copy; Thomas More Mechelen-Antwerp vzw - Campus De Nayer - Professional bachelor electronics-ict - 2023</div>
+            </div>
+            
+        </footer>
+    </div>
+
+</body>
+</html>

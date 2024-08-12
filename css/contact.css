@@ -1,0 +1,146 @@
+.background
+{
+    background-image: url(../images/back.jpeg);
+
+}
+.background h2:not(footer h2)
+{
+    text-align: center;
+}
+.content
+{
+    background-image: url("../images/Thomas\ More.jpg");
+    height: 700px;
+    width: 84%;  
+    margin-left: 130px;
+    color: black;
+    margin-bottom: 90px;
+}
+h2
+{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 550;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 40px 0px;
+    width: 95%;
+    margin-left: 38px;
+}
+.location
+{
+    float: left;
+    font-size: 30px;
+    display: inline;
+}
+.info
+{
+    float: left;
+    background-color: white;
+    width: 375px;
+    margin: 32px;
+    padding: 20px;
+    font-style: italic;
+    margin-bottom: 13px;
+}
+.info p
+{
+    margin: 8px 0px 8px 0px;
+}
+.pin
+{
+    width: 50px;
+}
+form
+{
+    width: 430px;
+    margin-left: 850px;
+    padding: 30px;
+}
+fieldset
+{
+    border: 2px solid black;
+    padding: 15px;
+    height: 470px;
+    margin-bottom: 3px;
+    background-color: #f1f0ea;
+}
+fieldset hr
+{
+    margin: 13px 0px 13px 0px;
+    color: #000100;
+}
+em
+{
+    color: red;
+}
+label
+{
+    float: left;
+    width: 90px;
+}
+textarea
+{
+    height: 70px;
+    width: 200px;
+
+}
+.firstname
+{
+    margin-bottom: 10px;
+}
+.top
+{
+    margin-bottom: 18px;
+    font-style: italic;
+}
+.TMlogo
+{
+    width: 70px;
+    display: block;
+}
+
+.warnings
+{
+    color: red;
+    margin: 3px 0px 3px 110px;
+    display: block;
+}
+
+span
+{
+    color: red;
+}
+
+.remark span
+{
+    padding-left: 17px;
+}
+
+#tel
+{
+    margin-left: 10px;
+}
+
+.province
+{
+    margin-left: 10px;
+}
+
+.button
+{
+    height: 25px;
+    width: 80px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+.button:hover
+{
+    background-color: black;
+    color: white;
+
+}

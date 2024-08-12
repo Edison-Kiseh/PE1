@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet"/>
+        <link href="../css/aboutprojectspace.css" rel="stylesheet" />
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.color.plus-names.js"></script>
+        <title>About our project</title>
+
+        <script>
+        function verify()
+        {
+            var email = document.getElementById('subscribe').value;
+
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//copied this line and the following one from the internet in order to validate my email
+            var test = regex.test(email);
+  
+            if(test)
+            {
+                alert('You are now subscribed to our news letter!\nCheck your emails regularly for our exclusive deals!');
+            }
+
+            if(!test)
+            {
+                document.getElementById('subscribe').value = "Please enter a valid email"
+            }
+
+        }
+
+            $(document).ready(function(){
+                $(".about").hide();
+                $(".about").fadeIn(1000);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navbar">
+                <a href="index.php"><img src="../images/logo2.png" class="logo"></a>
+                <ul>
+                    <li><a href="../html/shop.html">SHOP</a></li>
+                    <li><a href="#">ABOUT</a>
+                        <ul class="dropdown">
+                            <a href="#"><li>PROJECT SPACE</li></a>
+                            <a href="../html/aboutus.html"><li>THE TEAM</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="../html/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        
+    <div class="about">
+        <h2>ICT PRACTICE ENTERPRISE 2022-2023</h2><br />
+        <p><u>Team</u>: We are going to be making this project in a team of 2 and the participants are the following:</p><br />
+        <p><u>Name</u>: Edison Kiseh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>rnumber</u>: r0937121</p><br />
+        <p><u>Name</u>: Abdellah Benameur &nbsp;&nbsp;<u>rnumber</u>: r0909304<p><br />
+        <h3>Short description of project:</h3>
+        <p>For our Practice Enterprise project of 2022-2023, we are planning to create a webshop, which is
+        a website where goods, services or software can be purchased. The kinds of goods that are to be
+        sold in our webshop is going to be our own created projects.</p>
+        <p>As already mentioned above, we are going to be making this project in a team of 2. We are both
+        1st year students so this is something new for us, thus it&rsquo;ll be quite a challenging task. Luckily, we will
+        be taking web development lessons during this semester which will gradually teach us how to create
+        a website using HTML, JavaScript, CSS...hence the reason why we chose this project. The already
+        mentioned languages will be used for creating the front page of the site and enabling interactions
+        with the user. We are also going to add a database to the website using MySQL which we already
+        learned about during the first semester.</p>
+        <h3>Which problem will it solve?</h3>
+        <p>These projects will be on display on our webshop. This webshop will help save time for others
+        who are needed to create a certain project or just provide them with fun projects at an affordable
+        price.</h3>
+        <h3>Goals:</h3>
+        <p>Our goal for this project is to get the webshop fully functional as in it being able to fully satisfy
+        the customer&rsquo;s needs as long as we have what they are looking for and also provide easy access for
+        them. We will also strive to beautifully design the site in such a way that it is appealing to the end
+        user. We will also set in place a youtube channel which will help advertise our products by showing
+        some videos of how we made them plus their end results (how they work etc).</p>
+        <h3>Plan of action: objective:</h3>
+        <p>This webshop should permit customers to freely browse its products and services, view
+        photos/images of the products along with information about the products, specifications, features
+        and prices. It should also permit them to freely make purchases based on their preferences.</p>
+        <ul><h3>PLAN OF ACTION: FUNCTIONAL ANALYSIS:</h3></ul>
+        <li>We want our project to be able to act as a website and shop so that we do not have
+        to worry about the payment details and order details.</li>
+        <li>It is definitely not easy but with the right mindset and problem solving thinking we
+        can make sure it will be success.</li>
+        <li>The result should be able to welcome the user to our website and ensure that
+        everything works like it's supposed to and to make sure that we and the buyer are
+        safe when it comes to transactions.</li>
+        <li>We have chosen a project where money is not the biggest of our concerns, but time
+        and experience are.</li>
+    </div>
+</div>
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>QUICK LINKS</h2>
+                    <a href="#"><p>About</p></a>
+                    <a href="../html/seemoreabout.html"><p>About us</p></a>
+                    <a href="../html/contact.html"><p>Contact us</p></a>
+                    <a href="../html/termsofservice.html"><p>Terms of service</p></a>
+                    <a href="../html/privacypolicy.html"><p>Privacy policy</p></a>
+                </div>
+                <div class="col-sm-4">
+                    <h2>CONTACT US</h2>
+                    <a href="mailto:r0937121@student.thomasmore.be"><p>r0937121@student.thomasmore.be</p></a>
+                    <p>or</p>
+                    <a href="mailto:r0909304@student.thomasmore.be"><p>r0909304@student.thomasmore.be</p></a>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h2>NEWSLETTER</h2>
+                    <p>Exclusive offers, promotions, deals and discounts from our store</p>
+                    <p><input type="text" id="subscribe" name="subscribe" value="Enter your email" class="text" /></p>
+                    <p><input type="submit" value="Submit" class="submit" onclick="verify()"/></p>
+                </div>
+                
+            </div>
+            <div class="socials">
+                <h2>FOLLOW US:</h2>
+                <div class="logos">
+                    <a href="https://www.facebook.com/edison.kiseh" target="_blank"><img src="../images/facebook_logo.png" alt="facebook"/></a>
+                    <a href="https://www.instagram.com/the_awesome_lord/" target="_blank"><img src="../images/instagram_logo.png" alt="instagram"/></a>
+                    <a href="https://twitter.com/theawesomelord4/" target="_blank"><img src="../images/twitter_logo.png" alt="twitter"/></a>
+                    <a href="https://www.youtube.com/@projectengineering" target="_blank"><img src="../images/youtube_logo.png" alt="youtube"/></a>
+                    <a href="https://discord.gg/sjv6z833ev" target="_blank"><img src="../images/discord_logo.png" alt="discord" /></a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">Copyright &copy; Thomas More Mechelen-Antwerp vzw - Campus De Nayer - Professional bachelor electronics-ict - 2023</div>
+        </div>
+        
+    </footer>
+    </body>
+</html>

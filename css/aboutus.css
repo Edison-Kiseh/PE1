@@ -1,0 +1,31 @@
+h2
+{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 550;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 40px 0px;
+}
+
+.readmore{
+    background-color: white;
+    color: black;
+    padding: 14px;
+    margin: 60px 0px 50px 700px;
+    transition: all 0.2s ease-in;
+    font-size: larger;
+}
+.readmore:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.content p
+{
+    font-size: 17px;
+}
+

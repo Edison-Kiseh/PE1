@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet"/>
+        <link href="../css/seemoreabout.css" rel="stylesheet" />
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.color.plus-names.js"></script>
+        <title>More About us</title>
+
+        <script>
+        function verify()
+        {
+            var email = document.getElementById('subscribe').value;
+
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//copied this line and the following one from the internet in order to validate my email
+            var test = regex.test(email);
+  
+            if(test)
+            {
+                alert('You are now subscribed to our news letter!\nCheck your emails regularly for our exclusive deals!');
+            }
+
+            if(!test)
+            {
+                document.getElementById('subscribe').value = "Please enter a valid email"
+            }
+
+        }
+
+            $(document).ready(function(){
+                $(".content").hide();
+                $(".content").fadeIn(1000);
+            });
+        </script>
+    </head>
+<body>
+    <div class="background">
+        <div class="navbar">
+            <a href="index.php"><img src="../images/logo2.png" class="logo"></a>
+            <ul>
+                <li><a href="../html/shop.html">SHOP</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul class="dropdown">
+                        <a href="../html/aboutprojectspace.html"><li>PROJECT SPACE</li></a>
+                        <a href="../html/aboutus.html"><li>THE TEAM</li></a>
+                    </ul>
+                </li>
+                <li><a href="../html/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <h2>About us</h2>
+        <div class="content">
+            <p>
+                We are a team of passionate 1st year students in the field of Electronics and ICT in Thomas More Campus De Nayer, Sint-Katelijn-Waver.
+                Together, we came to the conclusion of creating this web page, not only for our project but for future use aswell.
+                Our mission in doing so is to use our experience to make a meaningful difference in the lives of people around the world. We believe that by working together and leveraging our unique talents, we can create a better future for all.
+               </p>
+               <p>
+                We are committed to honesty, integrity, and transparency in all of our interactions. We believe in treating everyone with respect and empathy, and we strive to create a webshop that'll treat every end user equally and fairly.
+                
+               </p>
+               <p>
+                We were and are dedicated to create this website and keep it up and running at the best performance. We found this overall challenging with the limited experience as we have technology wise both as individuals and as a team. But this is just another hurdle we have to overcome to become the ICT experts we aspire to be. We believe that by staying curious and open-minded, we can continue to push the boundaries of what is possible and make a lasting impact on the world.
+                
+               </p>
+               <p>
+               Thank you for taking the time to learn more about us. Contact us for more info.
+               </p>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>QUICK LINKS</h2>
+                    <a href="../html/aboutprojectspace.html"><p>About</p></a>
+                    <a href="#"><p>About us</p></a>
+                    <a href="../html/contact.html"><p>Contact us</p></a>
+                    <a href="../html/termsofservice.html"><p>Terms of service</p></a>
+                    <a href="../html/privacypolicy.html"><p>Privacy policy</p></a>
+                </div>
+                <div class="col-sm-4">
+                    <h2>CONTACT US</h2>
+                    <a href="mailto:r0937121@student.thomasmore.be"><p>r0937121@student.thomasmore.be</p></a>
+                    <p>or</p>
+                    <a href="mailto:r0909304@student.thomasmore.be"><p>r0909304@student.thomasmore.be</p></a>
+                </div>
+                <div class="col-sm-4">
+                    <h2>NEWSLETTER</h2>
+                    <p>Exclusive offers, promotions, deals and discounts from our store</p>
+                    <p><input type="text" id="subscribe" name="subscribe" value="Enter your email" class="text" /></p>
+                    <p><input type="submit" value="Submit" class="submit" onclick="verify()"/></p>
+                </div>
+            </div>
+            <div class="socials">
+                <h2>FOLLOW US:</h2>
+                <div class="logos">
+                    <a href="https://www.facebook.com/edison.kiseh" target="_blank"><img src="../images/facebook_logo.png" alt="facebook"/></a>
+                    <a href="https://www.instagram.com/the_awesome_lord/" target="_blank"><img src="../images/instagram_logo.png" alt="instagram"/></a>
+                    <a href="https://twitter.com/theawesomelord4/" target="_blank"><img src="../images/twitter_logo.png" alt="twitter"/></a>
+                    <a href="https://www.youtube.com/@projectengineering" target="_blank"><img src="../images/youtube_logo.png" alt="youtube"/></a>
+                    <a href="https://discord.gg/sjv6z833ev" target="_blank"><img src="../images/discord_logo.png" alt="discord" /></a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">Copyright &copy; Thomas More Mechelen-Antwerp vzw - Campus De Nayer - Professional bachelor electronics-ict - 2023</div>
+        </div>
+        
+    </footer>
+</body>
+</html>

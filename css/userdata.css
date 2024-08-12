@@ -1,0 +1,26 @@
+.location{
+    display: flex;
+    justify-content: space-between;
+}
+
+form
+{
+    color: black;
+    background-color: white;
+    width: 500px;
+    margin-left: 34%;
+    padding: 0px 30px 30px 30px;
+    border-radius: 5px;
+    
+}
+
+form div
+{
+    margin-top: 20px;
+}
+
+form input
+{
+    border-radius: 7px;
+}
+
